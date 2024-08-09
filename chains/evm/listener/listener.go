@@ -94,7 +94,7 @@ loop:
 				continue
 			}
 
-			l.metrics.TrackBlockDelta(l.domainID, head, endBlock)
+			//l.metrics.TrackBlockDelta(l.domainID, head, endBlock)
 			l.log.Debug().Msgf("Fetching evm events for block range %s-%s", startBlock, endBlock)
 
 			for _, handler := range l.eventHandlers {
